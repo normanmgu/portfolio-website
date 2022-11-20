@@ -1,6 +1,9 @@
 import "./project.styles.scss";
+import {useEffect} from "react";
+
 const Project = ({project}) => {
-  const { title, description, techStack } = project;
+  const { title, description, image, link } = project;
+  console.log(image)
 
   return (
     <div className="project-container">
@@ -15,14 +18,18 @@ const Project = ({project}) => {
                     </div>
                     <div className="project-footer">
                       <div className="project-footer-left project-button">
-                        <p className="footer-text">Preview</p>
+                        <a className="footer-text" >Preview</a>
                       </div>
+                
                       <div className="project-footer-right project-button ">
-                        <p className="footer-text">Source Code</p>
+                        <a className="footer-text" href={link}>Source Code</a>
                       </div>
                     </div>
                   </div>
-                  <div className="right">
+                  <div className="right" style={{
+                    backgroundImage: `url(/images/${image})`,
+                    backgroundSize: "contain",
+                  }}>
 
                   </div>
                 </div>

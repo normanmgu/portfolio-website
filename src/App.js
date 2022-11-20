@@ -7,8 +7,11 @@ const App = () =>{
   return (
     <div className="App">
       <Home />
-      <Projects />
       <AboutMe />
+      <Projects />
+      <div className="contact-container">
+        contact me: nmgutierrez@ucdavis.edu
+      </div>
     </div>
   );
 }

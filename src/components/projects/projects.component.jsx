@@ -11,10 +11,10 @@ const Projects = () => {
               <h1>Projects</h1>
             </div>
             {
-                PROJECTS.map(project => <Project project={project} />)
+              PROJECTS.map(project => <Project key={project.id} project={project} />)
             }
-            
-          </div>
+            <div>*Website in progress, more projects will be posted.</div>         
+    </div>
   )
 }
 

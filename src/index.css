@@ -1,13 +1,28 @@
 body {
   margin: 0;
-  font-family: "Rowdies", 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "VT323", "Rowdies", 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
+  font-size: 20px;
+
   
+}
+a {
+    color: inherit;
+    text-decoration: none;
+  }
+html {
+  background-color: black;
+}
+
+pre {
+  font-family: "VT323", "Rowdies", 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
 }
 
 * {

@@ -1,5 +1,6 @@
 import { ReactComponent as TerrariaMan } from "../../assets/tman.svg";
 import { SocialIcon } from "react-social-icons";
+import Typewriter from "typewriter-effect";
 
 import "./home.styles.scss";
 
@@ -15,20 +16,37 @@ const Home = () =>{
     <div className="left">
       <div className="introduction">
         <div>
-          <span>Hello I'm,</span>
+          <span>Hello I'm</span>
         </div>
         <div className="name">
-          <span>Norman Gutierrez</span>
+          <span>Norman Gutierrez,</span>
         </div>
         <div className="job-position">
-          <span> a Jr. Software Developer</span>
+
+          <pre>I'm a </pre><Typewriter 
+            options={{
+              autoStart: true,
+              loop: true,
+              delay: 40,
+              strings: [
+                " Software Engineer",
+                " Website Developer",
+                " student",
+              ]
+            }}
+          />
         </div>
         <div className="resume-download-container">
           <div className="download">
-            <span>Resume</span>
+            <span>
+            <a href="/images/Updated_Resume.pdf" download>
+              Resume
+            </a>
+            </span>
             <span>&#8595;</span>
           </div>
-          <SocialIcon url="www.linkedin.com/in/norman-gutierrez-77630121a" />
+          <SocialIcon fgColor="white" className="social-icon" url="https://www.linkedin.com/in/norman-gutierrez-77630121a/" />
+          <SocialIcon fgColor="white" className="social-icon" url="https://github.com/normanmgu" />
 
         </div>
       </div>

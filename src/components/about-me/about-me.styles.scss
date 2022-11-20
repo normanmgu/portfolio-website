@@ -1,0 +1,35 @@
+.about-me-container{
+  min-height: 100vh;
+  //background-color: rgb(255, 0, 0);
+
+  .other{
+    display:flex;
+    flex-direction:row;
+
+    main{
+      height: 500px;
+      margin: 2rem;
+      width: 55%;
+      display: flex;
+      justify-content: right;
+      border-style: solid;
+      box-shadow: 5px 5px;
+
+      .header {
+        width: 100%;
+        border-bottom: solid;
+      }
+      .main-text{
+        text-align: left;
+        overflow-y: scroll;
+        padding: 1rem;
+      }
+    }
+    }
+}
+  @media only screen and (max-width: 768px) {
+      .other {
+        display: flex;
+        align-content: flex-start;
+      }
+}

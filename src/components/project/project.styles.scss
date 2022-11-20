@@ -2,21 +2,16 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   .project{
     display: block;
     border-style: solid;
-    width: 75%;
+    width: 80%;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
-    margin: 2rem;
-    @media only screen and (max-width: 768px) {
-      .project {
-        height: 1000px;
-        width: 80%;
-      }
-    }
+    margin-bottom: 3rem;
 
     .project-header {
       border-bottom: 1px solid white;
@@ -25,14 +20,15 @@ main {
 
     .left{
       width: 50%;
-      background-color: green;
-      height: 100%;
+      background-color: rgba(0,0,0,.5);
+      height: 500px;
       float: left;
 
       .project-main{
         overflow-y: scroll;
         position: relative;
         height: 80%;
+        padding: 0.75rem;
       }
       .project-footer{
         border-top: 1px solid white;
@@ -78,22 +74,29 @@ main {
     .right{
       float: right;
       width: 50%;
-      background-color: darkmagenta;
       height: 100%;
-    }
-
-    @media only screen and (max-width: 768px) {
-  
-      .left{
-        float: none;
-        width: 100%;
+      height: 500px;;
     
-      }
-      .right {
-        width: 100%;
-        top: 100%;
-        float: none;
+  }
+
+}
+    @media only screen and (max-width: 768px) {
+ 
+      .project{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 500px;
+        margin: 1rem;
+        .left {
+          width: 100%;
+        }
+        .right {
+          display:none;
+          border-top: 2px solid white;
+          width: 100%;
+        }
+
       }
     }
-  }
 }
